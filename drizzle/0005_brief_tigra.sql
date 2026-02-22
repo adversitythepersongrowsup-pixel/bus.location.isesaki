@@ -1,0 +1,1 @@
+ALTER TABLE `stop_times` ADD `stopHeadsign` varchar(256);

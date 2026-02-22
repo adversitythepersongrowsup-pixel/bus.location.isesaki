@@ -1,0 +1,9 @@
+{
+  "query": "\nCREATE TABLE IF NOT EXISTS `lines` (\n  `id` int AUTO_INCREMENT NOT NULL,\n  `lineId` varchar(128) NOT NULL,\n  `lineName` varchar(256) NOT NULL,\n  `description` text,\n  `sortOrder` int NOT NULL DEFAULT 0,\n  `createdAt` timestamp NOT NULL DEFAULT (now()),\n  `updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,\n  CONSTRAINT `lines_id` PRIMARY KEY(`id`),\n  CONSTRAINT `lines_lineId_unique` UNIQUE(`lineId`)\n);\n\nALTER TABLE `routes` ADD COLUMN IF NOT EXISTS `lineId` varchar(128);\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3Prd8RneMVwDJCA.root --database aPiP2pfYw2KeoBaXzViLEL --execute \nCREATE TABLE IF NOT EXISTS `lines` (\n  `id` int AUTO_INCREMENT NOT NULL,\n  `lineId` varchar(128) NOT NULL,\n  `lineName` varchar(256) NOT NULL,\n  `description` text,\n  `sortOrder` int NOT NULL DEFAULT 0,\n  `createdAt` timestamp NOT NULL DEFAULT (now()),\n  `updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,\n  CONSTRAINT `lines_id` PRIMARY KEY(`id`),\n  CONSTRAINT `lines_lineId_unique` UNIQUE(`lineId`)\n);\n\nALTER TABLE `routes` ADD COLUMN IF NOT EXISTS `lineId` varchar(128);\n",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 2064
+}

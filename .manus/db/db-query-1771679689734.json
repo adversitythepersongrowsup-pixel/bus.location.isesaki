@@ -1,0 +1,9 @@
+{
+  "query": "\nALTER TABLE routes \n  ADD COLUMN IF NOT EXISTS isMerged TINYINT(1) NOT NULL DEFAULT 0,\n  ADD COLUMN IF NOT EXISTS mergedFrom TEXT NULL;\n\nALTER TABLE dias\n  ADD COLUMN IF NOT EXISTS lineId VARCHAR(128) NULL;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3Prd8RneMVwDJCA.root --database aPiP2pfYw2KeoBaXzViLEL --execute \nALTER TABLE routes \n  ADD COLUMN IF NOT EXISTS isMerged TINYINT(1) NOT NULL DEFAULT 0,\n  ADD COLUMN IF NOT EXISTS mergedFrom TEXT NULL;\n\nALTER TABLE dias\n  ADD COLUMN IF NOT EXISTS lineId VARCHAR(128) NULL;\n",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 2275
+}

@@ -1,0 +1,9 @@
+{
+  "query": "\nINSERT INTO quick_replies (content, sortOrder, isActive) VALUES\n('了解しました', 1, true),\n('少々お待ちください', 2, true),\n('遅延が発生しています', 3, true),\n('定刻通りです', 4, true),\n('緊急連絡が必要です', 5, true),\n('終点に到着しました', 6, true),\n('次の停留所に向かっています', 7, true),\n('乗客が多く発車が遅れています', 8, true);\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3Prd8RneMVwDJCA.root --database aPiP2pfYw2KeoBaXzViLEL --execute \nINSERT INTO quick_replies (content, sortOrder, isActive) VALUES\n('了解しました', 1, true),\n('少々お待ちください', 2, true),\n('遅延が発生しています', 3, true),\n('定刻通りです', 4, true),\n('緊急連絡が必要です', 5, true),\n('終点に到着しました', 6, true),\n('次の停留所に向かっています', 7, true),\n('乗客が多く発車が遅れています', 8, true);\n",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1507
+}

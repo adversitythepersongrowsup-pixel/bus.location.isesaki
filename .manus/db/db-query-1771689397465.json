@@ -1,0 +1,19 @@
+{
+  "query": "SELECT COUNT(*) as total FROM dia_segments; SELECT diaId, tripId, COUNT(*) as stop_count FROM dia_segments GROUP BY diaId, tripId LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3Prd8RneMVwDJCA.root --database aPiP2pfYw2KeoBaXzViLEL --execute SELECT COUNT(*) as total FROM dia_segments; SELECT diaId, tripId, COUNT(*) as stop_count FROM dia_segments GROUP BY diaId, tripId LIMIT 5;",
+  "rows": [
+    {
+      "total": "33"
+    },
+    {
+      "total": "diaId\ttripId\tstop_count"
+    },
+    {
+      "total": "90036\t土日祝_06時26分_系統100111\t33"
+    }
+  ],
+  "messages": [],
+  "stdout": "total\n33\ndiaId\ttripId\tstop_count\n90036\t土日祝_06時26分_系統100111\t33\n",
+  "stderr": "",
+  "execution_time_ms": 1709
+}

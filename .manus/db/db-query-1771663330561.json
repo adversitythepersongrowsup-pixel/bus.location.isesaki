@@ -1,0 +1,42 @@
+{
+  "query": "SELECT COLUMN_NAME, COLUMN_TYPE FROM information_schema.COLUMNS WHERE TABLE_NAME = 'stop_times' ORDER BY ORDINAL_POSITION;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3Prd8RneMVwDJCA.root --database aPiP2pfYw2KeoBaXzViLEL --execute SELECT COLUMN_NAME, COLUMN_TYPE FROM information_schema.COLUMNS WHERE TABLE_NAME = 'stop_times' ORDER BY ORDINAL_POSITION;",
+  "rows": [
+    {
+      "COLUMN_NAME": "id",
+      "COLUMN_TYPE": "int"
+    },
+    {
+      "COLUMN_NAME": "tripId",
+      "COLUMN_TYPE": "varchar(128)"
+    },
+    {
+      "COLUMN_NAME": "stopId",
+      "COLUMN_TYPE": "varchar(128)"
+    },
+    {
+      "COLUMN_NAME": "arrivalTime",
+      "COLUMN_TYPE": "varchar(16)"
+    },
+    {
+      "COLUMN_NAME": "departureTime",
+      "COLUMN_TYPE": "varchar(16)"
+    },
+    {
+      "COLUMN_NAME": "stopSequence",
+      "COLUMN_TYPE": "int"
+    },
+    {
+      "COLUMN_NAME": "createdAt",
+      "COLUMN_TYPE": "timestamp"
+    },
+    {
+      "COLUMN_NAME": "stopHeadsign",
+      "COLUMN_TYPE": "varchar(256)"
+    }
+  ],
+  "messages": [],
+  "stdout": "COLUMN_NAME\tCOLUMN_TYPE\nid\tint\ntripId\tvarchar(128)\nstopId\tvarchar(128)\narrivalTime\tvarchar(16)\ndepartureTime\tvarchar(16)\nstopSequence\tint\ncreatedAt\ttimestamp\nstopHeadsign\tvarchar(256)\n",
+  "stderr": "",
+  "execution_time_ms": 2542
+}

@@ -1,0 +1,22 @@
+{
+  "name": "バス運転支援システム",
+  "short_name": "運転支援",
+  "description": "バス運行管理・運転支援アプリケーション",
+  "start_url": "/tablet",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

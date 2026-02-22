@@ -1,0 +1,20 @@
+{
+  "query": "SELECT * FROM stop_times LIMIT 1;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3Prd8RneMVwDJCA.root --database aPiP2pfYw2KeoBaXzViLEL --execute SELECT * FROM stop_times LIMIT 1;",
+  "rows": [
+    {
+      "id": "1",
+      "tripId": "平日_05時32分_系統100111",
+      "stopId": "i-1_01",
+      "arrivalTime": "05:32:00",
+      "departureTime": "05:32:00",
+      "stopSequence": "1",
+      "createdAt": "2026-02-21 01:36:43",
+      "stopHeadsign": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttripId\tstopId\tarrivalTime\tdepartureTime\tstopSequence\tcreatedAt\tstopHeadsign\n1\t平日_05時32分_系統100111\ti-1_01\t05:32:00\t05:32:00\t1\t2026-02-21 01:36:43\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 1576
+}

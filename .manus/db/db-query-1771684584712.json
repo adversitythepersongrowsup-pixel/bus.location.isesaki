@@ -1,0 +1,22 @@
+{
+  "query": "SELECT serviceId, COUNT(*) as cnt FROM trips GROUP BY serviceId ORDER BY cnt DESC LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3Prd8RneMVwDJCA.root --database aPiP2pfYw2KeoBaXzViLEL --execute SELECT serviceId, COUNT(*) as cnt FROM trips GROUP BY serviceId ORDER BY cnt DESC LIMIT 20;",
+  "rows": [
+    {
+      "serviceId": "平日",
+      "cnt": "43"
+    },
+    {
+      "serviceId": "土日祝",
+      "cnt": "30"
+    },
+    {
+      "serviceId": "weekday",
+      "cnt": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "serviceId\tcnt\n平日\t43\n土日祝\t30\nweekday\t1\n",
+  "stderr": "",
+  "execution_time_ms": 1555
+}

@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1771613527593,
+      "tag": "0000_quick_onslaught",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1771613783321,
+      "tag": "0001_tired_proemial_gods",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1771685179805,
+      "tag": "0002_lumpy_blade",
+      "breakpoints": true
+    }
+  ]
+}
